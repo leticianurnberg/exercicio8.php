@@ -1,13 +1,13 @@
 <?php
 
 print " Quantos cigarros você fuma por dia?";
-$day = (int) fgets (STDIN);
+$pordia = (int) fgets (STDIN);
 
 print " Há quantos anos você fuma?";
 $years = (int) fgets (STDIN);
 
-$min = $day*365*$years;
-$perdidos = $min*10;
+$min = $pordia*365*$years;
+$min_perdidos = $min*10;
 $hrs = $perdidos/60;
 $diasper = round ($hrs/24);
 
